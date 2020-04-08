@@ -3,20 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Muli:300,400,600,700|Open+Sans:600&amp;display=swap" rel="stylesheet"/>
+    <link rel="stylesheet" type="text/css" href="https://www.sanarmed.com/residenciamedica/assets/fonts/importFonts.css"/>
+    <link rel="icon" href="https://www.sanarmed.com/residenciamedica/assets/images/favicon.png" sizes="32x32"/>
     <title>Ranking de Residência Médica </title>
+    <link rel="stylesheet" href="css/styles.css">
+    
+    <link rel="icon" href="images/favicon.png">
 </head>
 <body>
-    <table cellspacing="20" >
-    <tr>
-        <td><img src="images/logo.png" alt="logo de sanar residência médica"></td>
-        <td><p></p>Ranking de Provas de Residência Médica</p>
-            <p>Uma ferramenta gratuita para futuros residentes</p>
-        </td>  
-    </tr>
-    </table>
+    <div class="containers"><img src="images/logo.png" alt="logo de sanar residência médica" width="10%"></div>
+    <div class="containers">Ranking de Provas de Residência Médica 
+    <p>Uma ferramenta gratuita para futuros residentes</p></div>
     <hr>
-    <h2>Sobre o ranking:</h2>
-    <ol>
+    <div class="about"><h2>Sobre o ranking:</h2>
+    <ol class="">
         <li>Escolha a instituição</li>
         <li>Escolha a <a href="https://www.sanarmed.com/ciclos-da-medicina/residencia-medica">especialidade</a></li>
         <li>Cadastre suas notas
@@ -27,14 +28,18 @@
         </li>
 
     </ol>
+    </div>
     <hr>
-    <form action="mailto:lucasdantasdesouza@gmail.com" enctype="text/plain" method="post">
-        <label for="">Seu nome</label>
-        <input type="text" name="yourName"> <br> <br>
-        <label for="">Seu e-mail</label>
+    <form class="containers" style="text-align: center;" action="mailto:lucasdantasdesouza@gmail.com" enctype="text/plain" method="post">
+        <label for="">Seu nome</label><br> 
+        <input type="text" name="yourName"><br> <br>
+        <label for="">Seu e-mail</label><br> 
         <input type="email" name="yourEmail"> <br> <br>
-        <label for="">Você é PCD?</label>
-        <input type="checkbox" name="" id="">
+        <label for="">Você é PCD?</label><br> 
+        <input type="checkbox" name="" id=""><br> <br>
+        <label for="">Vai assumir ou está aguardando outro resultaod?</label> <br>
+        <input type="radio" class="radio"> Vou assumir <br> 
+        <input type="radio" class="radio"> Estou esperando outro resultado <br>
         
 
     </form>
