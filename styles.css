@@ -1,0 +1,39 @@
+.containers {
+    margin-top: 12px;
+    background-color: #fff;
+    border: 1px solid #dadce0;
+    border-radius: 8px;
+    margin-bottom: 12px;
+    padding: 10px;
+    padding-top: 10px;
+    position: relative;
+    text-align: center;
+    display: block;
+    ;
+}
+    
+}
+html,
+body,
+p,
+a,
+span,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+* {
+  font-family: "Muli", sans-serif;
+}
+.about{
+    position: relative;
+    text-align: justify;
+    left: 40%;
+
+}
+.radio{
+    margin-top: 10px;
+    text-align: left;
+}
