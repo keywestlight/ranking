@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://fonts.googleapis.com/css?family=Muli:300,400,500,700|Open+Sans:300,400,700&display=swap" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css?family=Muli:300,400,600,700|Open+Sans:600&amp;display=swap" rel="stylesheet"/>
+    <link rel="stylesheet" type="text/css" href="https://www.sanarmed.com/residenciamedica/assets/fonts/importFonts.css"/>
     <link rel="icon" href="https://www.sanarmed.com/residenciamedica/assets/images/favicon.png" sizes="32x32"/>
     <title>Ranking de Residência Médica </title>
     <link rel="stylesheet" href="css/styles.css">
@@ -11,35 +12,34 @@
     <link rel="icon" href="images/favicon.png">
 </head>
 <body>
-    <div class="containers"><img src="images/logo.png" alt="logo de sanar residência médica" width="10%"></div>
-    <div class="containers">Ranking de Provas de Residência Médica 
-    <p>Uma ferramenta gratuita para futuros residentes</p></div>
-    <hr>
-    <div class="about"><h2>Sobre o ranking:</h2>
-    <ol class="">
+    <div class="containers"><img src="images/logo.png" class="top-logo" alt="logo de sanar residência médica"></div>
+    <br>
+    <div class="containers" id="description">
+    <p> RANKING PRÉ PROVA DE RESIDÊNCIA MÉDICA</p> 
+    <p> Ferramenta gratuita para futuros residentes</p> </div><br>
+    
+    <div class="containers"><h2>Sobre o ranking:</h2> 
+    <ol>
         <li>Escolha a instituição</li>
         <li>Escolha a <a href="https://www.sanarmed.com/ciclos-da-medicina/residencia-medica">especialidade</a></li>
-        <li>Cadastre suas notas
-            <ul>
-                <li>Escolha as matérias com atenção</li>
-                <li>Fique atento aos <a href="pesos.html">pesos</a>!</li> 
-            </ul>            
-        </li>
+        <li>Cadastre seus acertos</li>
 
     </ol>
-    </div>
-    <hr>
-    <form class="containers" style="text-align: center;" action="mailto:lucasdantasdesouza@gmail.com" enctype="text/plain" method="post">
-        <label for="">Seu nome</label><br> 
-        <input type="text" name="yourName"><br> <br>
+    </div><br>
+    <form class="data-box" action="mailto:lucasdantasdesouza@gmail.com" enctype="text/plain" method="post">
+        <label for="">Seu nome</label><br>
+        <input type="text" name="yourName" size="50"><br> <br>
         <label for="">Seu e-mail</label><br> 
-        <input type="email" name="yourEmail"> <br> <br>
+        <input type="email" name="yourEmail" size="50"> <br> <br>
         <label for="">Você é PCD?</label><br> 
         <input type="checkbox" name="" id=""><br> <br>
-        <label for="">Vai assumir ou está aguardando outro resultaod?</label> <br>
+        <label for="">Vai assumir ou está aguardando outro resultado?</label> <br>
         <input type="radio" class="radio"> Vou assumir <br> 
-        <input type="radio" class="radio"> Estou esperando outro resultado <br>
-        
+        <input type="radio" class="radio"> Estou esperando outro resultado <br> <br>
+        <label for="">Quantas questões você acertou?    </label> <br>
+        <input type="quantity" id="questoes" name="questoes" min="0" max="50"> <br><br>
+        <input type="submit" value="Mostre minha posição!">
+
 
     </form>
 </body>
